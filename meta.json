@@ -1,7 +1,7 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "mcvella:solaredge-monitor",
-  "visibility": "private",
+  "visibility": "public",
   "url": "https://github.com/mcvella/viam-solaredge-monitor",
   "description": "Viam module that provides an interface to the Solaredge monitoring API",
   "models": [

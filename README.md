@@ -46,27 +46,35 @@ This module implements the GetReadings() sensor method, and returns results that
 {
   "siteCurrentPowerFlow": {
     "GRID": {
-      "currentPower": 0,
+      "currentPower": 0.01,
       "status": "Active"
     },
     "LOAD": {
-      "currentPower": 0.55,
+      "currentPower": 0.7,
       "status": "Active"
     },
     "PV": {
-      "currentPower": 0,
-      "status": "Idle"
+      "currentPower": 1.81,
+      "status": "Active"
     },
     "STORAGE": {
-      "chargeLevel": 27,
+      "chargeLevel": 14,
       "critical": false,
-      "currentPower": 0.55,
-      "status": "Discharging"
+      "currentPower": 1.12,
+      "status": "Charging"
     },
     "connections": [
       {
-        "from": "STORAGE",
+        "from": "GRID",
         "to": "Load"
+      },
+      {
+        "from": "PV",
+        "to": "Load"
+      },
+      {
+        "from": "PV",
+        "to": "Storage"
       }
     ],
     "unit": "kW",
