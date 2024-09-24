@@ -1,0 +1,14 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "mcvella:solaredge-monitor",
+  "visibility": "private",
+  "url": "https://github.com/mcvella/viam-solaredge-monitor",
+  "description": "Viam module that provides an interface to the Solaredge monitoring API",
+  "models": [
+    {
+      "api": "rdk:component:sensor",
+      "model": "mcvella:sensor:solaredge-monitor"
+    }
+  ],
+  "entrypoint": "run.sh"
+}
