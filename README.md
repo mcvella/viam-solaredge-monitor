@@ -42,7 +42,7 @@ The following attributes are available for `rdk:sensor:mcvella:sensor:solaredge-
 
 This module implements the GetReadings() sensor method, and returns results that look like:
 
-``` JSON
+``` json
 {
   "siteCurrentPowerFlow": {
     "GRID": {
